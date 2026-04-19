@@ -3,10 +3,9 @@
 import { useState } from "react";
 
 export default function Home() {
-  // Accordion state: track which FAQ is open (null = none)
-  const [openIndex, setOpenIndex] = useState(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const toggleFaq = (index) => {
+  const toggleFaq = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
@@ -55,7 +54,7 @@ export default function Home() {
               Established Engineering Excellence
             </span>
             <h1 className="text-white font-headline text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.1] mb-5">
-              Building Strong Foundations <br className="hidden sm:block"/> for a Better Future
+              Building Strong Foundations <br className="hidden sm:block" /> for a Better Future
             </h1>
             <p className="text-on-primary-container text-lg md:text-xl lg:text-2xl font-light leading-relaxed mb-8 max-w-3xl mx-auto">
               Reliable Construction Services Across the UK. From monumental structural engineering to high-end residential renovations.
@@ -297,29 +296,27 @@ export default function Home() {
 
           {/* Accordion FAQ Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-4">
-            {faqs.map((faq, idx) => (
-              <div key={idx} className="border-b border-primary/20">
-                <button
-                  onClick={() => toggleFaq(idx)}
-                  className="w-full flex justify-between items-center py-6 text-left group"
-                >
-                  <h3 className="font-headline text-xl font-bold text-primary pr-4">
-                    {faq.q}
-                  </h3>
-                  <span className="material-symbols-outlined text-primary text-2xl transition-transform duration-300">
-                    {openIndex === idx ? "remove" : "add"}
-                  </span>
-                </button>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                    openIndex === idx ? "max-h-96 pb-6" : "max-h-0"
+            {faqs.map((faq, idx: number) => (<div key={idx} className="border-b border-primary/20">
+              <button
+                onClick={() => toggleFaq(idx)}
+                className="w-full flex justify-between items-center py-6 text-left group"
+              >
+                <h3 className="font-headline text-xl font-bold text-primary pr-4">
+                  {faq.q}
+                </h3>
+                <span className="material-symbols-outlined text-primary text-2xl transition-transform duration-300">
+                  {openIndex === idx ? "remove" : "add"}
+                </span>
+              </button>
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === idx ? "max-h-96 pb-6" : "max-h-0"
                   }`}
-                >
-                  <p className="text-on-surface-variant/80 text-base leading-relaxed pl-2">
-                    {faq.a}
-                  </p>
-                </div>
+              >
+                <p className="text-on-surface-variant/80 text-base leading-relaxed pl-2">
+                  {faq.a}
+                </p>
               </div>
+            </div>
             ))}
           </div>
         </div>
