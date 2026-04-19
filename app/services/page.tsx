@@ -3,7 +3,14 @@
 import { useEffect, useRef, useState } from "react";
 
 /* 🔹 Reusable Service Block (Same Design for 1,2,3) */
-function ServiceBlock({ title, desc, img, reverse = false }) {
+type ServiceBlockProps = {
+  title: string;
+  desc: string;
+  img: string;
+  reverse?: boolean;
+};
+
+function ServiceBlock({ title, desc, img, reverse = false }: ServiceBlockProps) {
   return (
     <section className="py-20 md:py-28 px-6 md:px-12 bg-surface">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
