@@ -50,8 +50,7 @@ export default function RootLayout({
                   href="https://linkedo.co.uk/"
                   target="_blank"
                   rel="nofollow noopener noreferrer"
-                  className="font-semibold hover:opacity-80 transition-opacity"
-                  style={{ color: "#002b4c" }}
+                  className="font-bold text-white hover:opacity-80 transition-opacity"
                 >
                   Linkedo
                 </a>
