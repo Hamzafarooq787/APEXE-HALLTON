@@ -51,12 +51,10 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-slate-800 flex justify-between items-center">
+          <div className="max-w-7xl mx-auto mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
             <p className="text-slate-400 text-xs sm:text-sm tracking-wide">
               &copy; 2024 APEXE HALLTON LTD. Architectural Authority in Engineering.
             </p>
-          </div>
-          <div className="max-w-7xl mx-auto mt-4 text-center">
             <p className="text-slate-400 text-xs sm:text-sm">
               Designed By{" "}
               <a
