@@ -12,8 +12,8 @@ export default function Navbar() {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl shadow-[0_20px_40px_rgba(0,43,76,0.06)]">
-        <div className="flex justify-between items-center h-24 px-6 md:px-12 max-w-[1920px] mx-auto">
-          <Link href="/" className="text-2xl font-black tracking-tighter text-blue-900 font-headline">
+        <div className="flex justify-between items-center h-16 sm:h-20 md:h-24 px-4 sm:px-6 md:px-12 max-w-[1920px] mx-auto">
+          <Link href="/" className="text-lg sm:text-xl md:text-2xl font-black tracking-tighter text-blue-900 font-headline">
             APEXE HALLTON
           </Link>
           <div className="hidden md:flex items-center gap-10">
