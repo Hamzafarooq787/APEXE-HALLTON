@@ -84,9 +84,9 @@ export default function Contact() {
                 </div>
               </div>
               <img
-                alt="Map showing location of Stoke-on-Trent"
+                alt="Aerial map view of Stoke-on-Trent area"
                 className="w-full h-full object-cover grayscale contrast-125 opacity-50"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuANB5cYk13_QPYQJcuQHFt2Q5hRSYqcue5xtmpu50LAKxEXbn2EdLQcNCkJkPmmdznBarRT8AgYyDfNvPUofwUn5_uDHyKktX6UY2sFb5lmc59-DCJbiVrNHcp2eGgv6qfiLa8_NxIIpudBU9JxH89hBucQyFtYMyJiU1xSdQuiGavgSpo-zcdcptKHuxGK1y6Hh1aBE1oAiy3PKiDN4CJ9B94MEQPdGK6M8fVXyq8tVw9YKq7mG9cixutE7_66-VNU0cqjuM1sFclv"
+                src="/images/map-stoke.jpg"
               />
             </div>
           </div>

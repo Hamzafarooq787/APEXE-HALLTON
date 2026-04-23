@@ -230,7 +230,7 @@ export default function Home() {
               <p className="text-on-surface text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 italic">&ldquo;APEXE HALLTON transformed our commercial space with a level of precision we haven&apos;t seen in the UK market. Their structural insights saved us weeks on the timeline.&rdquo;</p>
               <div className="flex items-center gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-300 rounded-full overflow-hidden shrink-0">
-                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZnk1ev4u8wVcjOqLSi1YWpKZRoPULAPuPWPFKSTCXg2LtPGQhkcaDqYqZGC0syPOAWauB73SO7zO5N7-OT1PrfwRjRJn6KASmPZ95vP8d2Qu5-iwts0o_4-oIdPXOypTr3Ppk-ZuHWzAVb5tBu4mUVmEux9uh00sVRDlnx1slS20ppcSoUuoUyfD68jIa4T1c6nYTmVpbl770hki08uNjLadSaxOIoWlz0d5hTrlWhCiZGQlfcGFKpCuUyjMzbL_eMybqnXPd8YPC" alt="Marcus Vane" className="w-full h-full object-cover" />
+                  <img src="/images/avatar-marcus-vane.jpg" alt="Marcus Vane" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <div className="font-bold text-primary text-xs sm:text-sm">Marcus Vane</div>
@@ -244,7 +244,7 @@ export default function Home() {
               <p className="text-on-primary text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 italic">&ldquo;The engineering prowess displayed during our residential renovation was exceptional. They managed to merge historic aesthetics with modern load-bearing solutions seamlessly.&rdquo;</p>
               <div className="flex items-center gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-300 rounded-full overflow-hidden shrink-0">
-                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByaMGEGPBrlAOmhjalV8Ut3sswZF86VcUNPz2tzLAZ4UueGL_4J86X9eQ9i5R5tWTjdJmJaLzDNMyTlartNrHtaioeag_9gSn5v8gbDz8nHnBPZwhTrUoqLRF2riL5byHMzQe2lY0XqbTBVxq3byUMcaftXc3F5iqnJ-kAaISLZEMzh2W8QO_nS7ld3bwFaueY5Dgosi3DXa8TEdx3WQN53L4vQcZRQHO3lsNdYiZC_YkoO9Zb0h-b1_aUqjhW9S8uwCFE9sZ1Lsy2" alt="Sarah Jenkins" className="w-full h-full object-cover" />
+                  <img src="/images/avatar-sarah-jenkins.jpg" alt="Sarah Jenkins" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <div className="font-bold text-white text-xs sm:text-sm">Sarah Jenkins</div>
@@ -258,7 +258,7 @@ export default function Home() {
               <p className="text-on-surface text-sm sm:text-base md:text-lg leading-relaxed mb-6 sm:mb-8 italic">&ldquo;Reliable, transparent, and technically superior. APEXE HALLTON is our go-to for any complex structural engineering requirements in London.&rdquo;</p>
               <div className="flex items-center gap-3 sm:gap-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-slate-300 rounded-full overflow-hidden shrink-0">
-                  <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrcPCMO0CaryKECW6P9OXX8DL-8SjibDzWQfFcooXM3DtDIm-RB_iNRdkFkxfaFiSZQbWQYPU8qYmgyFaYGIkZZz1-usy7WZFciRi3AGKB8lxZHB2cGoFmTSXXaZ3sLl7Ez_JKvjfv3VW4-q91yk9eV7L3BQ0LF2XyRQTZSCYTp1MOYUnV4Qt72RHziZGNb4ON1mzpNOOmhXe2zpUC8pzsoFBXDczu1fq0KjqK88CJ3dUIhrHHTssuDxnm5iJWM0owgDZUHLF55-od" alt="David Thorne" className="w-full h-full object-cover" />
+                  <img src="/images/avatar-david-thorne.jpg" alt="David Thorne" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <div className="font-bold text-primary text-xs sm:text-sm">David Thorne</div>

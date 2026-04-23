@@ -115,19 +115,19 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {[
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuCRHM0PRpSb7-VWu8AL_5UY0ft83rqTp9vMrQIqcwTfbg5q-63_Ljp6ofS8iXUajfOTMWaewb9LKNJt0Af8fiAtbgqLdYw1yhsrnJPnlvLaK2zu9mXL6Km6cripoKHvqyCHKvyu2acpuWOK8UOCfgA9vdqB0e2sP2AHr-7CoRmcA_16VTTH0ewDaFSdoelWxKNGMol0CNeZtsrKKCPkEx5UI3mW75D8A_UGmxxmQFqBJbyOiRbLDGCxgGYRKweO-kLS4GnKhC--U6m8",
+                img: "/images/leader-alistair-hallton.jpg",
                 role: "Chief Executive Officer",
                 name: "Alistair Hallton",
                 desc: "Visionary engineer with 30 years experience leading multi-million pound infrastructure projects across the UK."
               },
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuC8afgQGYsHCaWLe7WYXsLdRrICOMBrAloBGcxN1KYzeg45MaUQTY1R82pVjK38ZQshYPnAGjpybX_ObBWb41sEVOIUg4NKkezm5OHS9xlTEoM31BhQwDUSGHvSJZKMqW4UAKyMY5_cfjKU4NFcrVejD47d_op0Oei9a5rdOa_mQc_2AT1v41aEq4ma1PmLCVvWE9imFiKnb2UuUEainB5Uykv3Fk-UFvcSITQ-Ikfj1ECVrceJakKjF1koxEXA0agxYAFnN7fOcolB",
+                img: "/images/leader-eleanor-vance.jpg",
                 role: "Director of Engineering",
                 name: "Eleanor Vance",
                 desc: "Specializing in structural integrity and modern material science, Eleanor ensures technical perfection across all sites."
               },
               {
-                img: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7mT_G85tZOFEy15nfzkSxGA8MFIDA1o53SvX5OX40a3lPiE4k99TjAephGvnqchx-G9lB8KxUbwyXpGWQnVq7iTq-1u2nPkpINk8dzNREUaRcgdMQoTyIU7Yfeu2LvEeP87Fd4fGgXbMOlmH4XVIJkD4YDYh9ZhkwYxIqAdU1ZamWW8I0KXeKbsJ_k7ekcNu4YzwHXIp0S0jCmSAwQ0ZGeOtV53CBVjm2Wtyyk0-FByPU77rURZLYIMUIN2nvA43kIlAGMnaS4Y_4",
+                img: "/images/leader-marcus-thorne.jpg",
                 role: "Operations Director",
                 name: "Marcus Thorne",
                 desc: "The logistical backbone of APEXE HALLTON, managing complex supply chains and national site operations."
