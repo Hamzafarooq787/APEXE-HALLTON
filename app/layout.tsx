@@ -43,13 +43,6 @@ export default function RootLayout({
               <p className="text-slate-400 text-xs sm:text-sm mt-2">19 MAY AVENUE, ST6 6EN</p>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Legal</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-slate-400 hover:text-white text-xs sm:text-sm transition-all hover:translate-x-1 inline-block">Privacy Policy</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white text-xs sm:text-sm transition-all hover:translate-x-1 inline-block">Terms of Service</a></li>
-              </ul>
-            </div>
-            <div>
               <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Social</h4>
               <div className="flex space-x-4">
                 <span className="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer text-xl sm:text-2xl">corporate_fare</span>
@@ -58,9 +51,20 @@ export default function RootLayout({
               </div>
             </div>
           </div>
-          <div className="max-w-7xl mx-auto mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-slate-800 flex justify-between items-center">
+          <div className="max-w-7xl mx-auto mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0">
             <p className="text-slate-400 text-xs sm:text-sm tracking-wide">
               &copy; 2024 APEXE HALLTON LTD. Architectural Authority in Engineering.
+            </p>
+            <p className="text-slate-400 text-xs sm:text-sm">
+              Designed By{" "}
+              <a
+                href="https://linkedo.co.uk/"
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="font-bold text-white hover:opacity-80 transition-opacity"
+              >
+                Linkedo
+              </a>
             </p>
           </div>
         </footer>
