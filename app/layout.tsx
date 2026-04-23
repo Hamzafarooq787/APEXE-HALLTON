@@ -43,11 +43,19 @@ export default function RootLayout({
               <p className="text-slate-400 text-xs sm:text-sm mt-2">19 MAY AVENUE, ST6 6EN</p>
             </div>
             <div>
-              <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Legal</h4>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-slate-400 hover:text-white text-xs sm:text-sm transition-all hover:translate-x-1 inline-block">Privacy Policy</a></li>
-                <li><a href="#" className="text-slate-400 hover:text-white text-xs sm:text-sm transition-all hover:translate-x-1 inline-block">Terms of Service</a></li>
-              </ul>
+              <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Credits</h4>
+              <p className="text-slate-400 text-xs sm:text-sm">
+                Designed By{" "}
+                <a
+                  href="https://linkedo.co.uk/"
+                  target="_blank"
+                  rel="nofollow noopener noreferrer"
+                  className="font-semibold hover:opacity-80 transition-opacity"
+                  style={{ color: "#002b4c" }}
+                >
+                  Linkedo
+                </a>
+              </p>
             </div>
             <div>
               <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Social</h4>
