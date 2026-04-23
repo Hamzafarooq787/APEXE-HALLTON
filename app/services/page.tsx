@@ -64,7 +64,7 @@ export default function Services() {
     <main className="pt-20">
 
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] sm:min-h-[90vh] flex items-center justify-center text-center">
+      <section className="relative min-h-[60vh] sm:min-h-[75vh] md:min-h-[90vh] flex items-center justify-center text-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="/images/services-hero.jpg"
@@ -74,18 +74,18 @@ export default function Services() {
           <div className="absolute inset-0 bg-black/60"></div>
         </div>
 
-        <div className="relative z-10 px-4 sm:px-6 max-w-4xl">
-          <h1 className="text-white text-2xl sm:text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-3 sm:mb-4 text-balance">
+        <div className="relative z-10 px-4 sm:px-6 max-w-4xl w-full pb-16 sm:pb-20">
+          <h1 className="text-white text-xl sm:text-3xl md:text-5xl lg:text-7xl font-black leading-tight mb-2 sm:mb-3 md:mb-4 text-balance">
             Defining the <br /> Future of Structure.
           </h1>
-          <p className="text-gray-300 text-sm sm:text-base md:text-lg lg:text-xl mb-5 sm:mb-6">
+          <p className="text-gray-300 text-xs sm:text-sm md:text-base lg:text-lg mb-4 sm:mb-5 md:mb-6 leading-relaxed">
             Engineering precision for modern architecture.
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-            <button className="bg-primary px-6 py-3 text-white font-bold rounded shadow-lg text-sm sm:text-base">
+          <div className="flex flex-col xs:flex-row sm:flex-row gap-2 sm:gap-3 md:gap-4 justify-center items-center">
+            <button className="bg-primary px-5 sm:px-6 py-2.5 sm:py-3 text-white font-bold rounded shadow-lg text-xs sm:text-sm md:text-base w-full xs:w-auto sm:w-auto max-w-[200px] sm:max-w-none">
               View Work
             </button>
-            <button className="border border-white px-6 py-3 text-white rounded text-sm sm:text-base">
+            <button className="border border-white px-5 sm:px-6 py-2.5 sm:py-3 text-white rounded text-xs sm:text-sm md:text-base w-full xs:w-auto sm:w-auto max-w-[200px] sm:max-w-none">
               Request Quote
             </button>
           </div>
@@ -93,10 +93,10 @@ export default function Services() {
 
         <div
           ref={statsRef}
-          className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur px-5 sm:px-6 py-2 rounded-full shadow"
+          className="absolute bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur px-4 sm:px-5 md:px-6 py-1.5 sm:py-2 rounded-full shadow whitespace-nowrap"
         >
-          <span className="font-black text-primary text-lg sm:text-xl">{count}+</span>
-          <span className="text-xs sm:text-sm ml-2 font-bold">Years Experience</span>
+          <span className="font-black text-primary text-base sm:text-lg md:text-xl">{count}+</span>
+          <span className="text-xs sm:text-sm ml-1.5 sm:ml-2 font-bold">Years Experience</span>
         </div>
       </section>
 
