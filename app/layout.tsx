@@ -1,10 +1,37 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "APEXE HALLTON LTD | Architectural Authority in Engineering",
   description: "Reliable Construction Services Across the UK.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
+  openGraph: {
+    title: "APEXE HALLTON LTD | Architectural Authority in Engineering",
+    description: "Reliable Construction Services Across the UK.",
+    url: "https://apexehallton.co.uk",
+    siteName: "APEXE HALLTON LTD",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "APEXE HALLTON - Property. Purpose. Excellence.",
+      },
+    ],
+    locale: "en_GB",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "APEXE HALLTON LTD | Architectural Authority in Engineering",
+    description: "Reliable Construction Services Across the UK.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +57,15 @@ export default function RootLayout({
         <footer className="bg-blue-950 w-full py-12 sm:py-16 px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 max-w-7xl mx-auto">
             <div className="col-span-2 md:col-span-1">
-              <div className="text-base sm:text-xl font-bold text-white uppercase tracking-widest mb-4 sm:mb-6">APEXE HALLTON</div>
+              <div className="mb-4 sm:mb-6">
+                <Image
+                  src="/images/apexe-hallton-logo.png"
+                  alt="APEXE HALLTON logo"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain brightness-0 invert"
+                />
+              </div>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                 The UK&apos;s premier authority in architectural engineering and large-scale construction solutions.
               </p>
@@ -69,15 +104,7 @@ export default function RootLayout({
           </div>
         </footer>
 
-        {/* WhatsApp FAB */}
-        <a
-          href="https://wa.me/440000000000"
-          className="fixed bottom-8 right-8 z-[100] w-16 h-16 bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-transform rounded-full"
-        >
-          <svg className="w-8 h-8 fill-current" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.938 3.659 1.435 5.634 1.435h.008c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
-          </svg>
-        </a>
+
       </body>
     </html>
   );

@@ -1,4 +1,24 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Contact() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [inquiryType, setInquiryType] = useState("Quote Request");
+  const [message, setMessage] = useState("");
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    const to = "sales@apexehallton.co.uk";
+    const subject = encodeURIComponent(`${inquiryType} – ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nInquiry Type: ${inquiryType}\n\nMessage:\n${message}`
+    );
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+  }
+
   return (
     <main className="pt-24 min-h-screen">
       {/* Hero Section */}
@@ -60,12 +80,7 @@ export default function Contact() {
                       sales@apexehallton.co.uk
                     </a>
                   </div>
-                  <div>
-                    <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface mb-1">Directorate</h3>
-                    <a className="text-primary font-medium hover:underline block text-sm sm:text-base" href="mailto:Habte.Kibrom@apexehallton.co.uk">
-                      Habte.Kibrom@apexehallton.co.uk
-                    </a>
-                  </div>
+
                 </div>
               </div>
             </div>
@@ -103,13 +118,16 @@ export default function Contact() {
                 </p>
               </div>
 
-              <form className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+              <form className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8" onSubmit={handleSubmit}>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-primary">Full Name</label>
                   <input
                     className="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary px-3 sm:px-4 py-3 sm:py-4 font-body transition-all text-sm sm:text-base"
                     placeholder="e.g. Alexander Hall"
                     type="text"
+                    required
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 <div className="space-y-2">
@@ -118,6 +136,9 @@ export default function Contact() {
                     className="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary px-3 sm:px-4 py-3 sm:py-4 font-body transition-all text-sm sm:text-base"
                     placeholder="email@company.com"
                     type="email"
+                    required
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="space-y-2">
@@ -126,11 +147,17 @@ export default function Contact() {
                     className="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary px-3 sm:px-4 py-3 sm:py-4 font-body transition-all text-sm sm:text-base"
                     placeholder="+44 000 000 0000"
                     type="tel"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
                   />
                 </div>
                 <div className="space-y-2">
                   <label className="text-xs font-black uppercase tracking-widest text-primary">Inquiry Type</label>
-                  <select className="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary px-3 sm:px-4 py-3 sm:py-4 font-body transition-all appearance-none text-sm sm:text-base">
+                  <select
+                    className="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary px-3 sm:px-4 py-3 sm:py-4 font-body transition-all appearance-none text-sm sm:text-base"
+                    value={inquiryType}
+                    onChange={(e) => setInquiryType(e.target.value)}
+                  >
                     <option>Quote Request</option>
                     <option>General Inquiry</option>
                     <option>Site Visit</option>
@@ -145,15 +172,18 @@ export default function Contact() {
                     className="w-full bg-surface-container-highest border-none focus:ring-0 focus:border-b-2 focus:border-primary px-3 sm:px-4 py-3 sm:py-4 font-body transition-all resize-none text-sm sm:text-base"
                     placeholder="Describe your project scope and engineering requirements..."
                     rows={6}
+                    required
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   ></textarea>
                 </div>
                 <div className="sm:col-span-2 pt-2 sm:pt-4">
                   <button
-                    className="w-full bg-primary text-on-primary py-4 sm:py-5 md:py-6 px-8 sm:px-12 font-headline font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 sm:gap-4 hover:bg-primary-container transition-all group text-sm sm:text-base"
+                    className="w-full bg-primary text-on-primary py-3 sm:py-4 md:py-5 px-4 sm:px-8 md:px-12 font-headline font-black uppercase tracking-wide sm:tracking-[0.2em] flex items-center justify-center gap-2 sm:gap-3 hover:bg-primary-container transition-all group text-xs sm:text-sm md:text-base"
                     type="submit"
                   >
                     Transmit Inquiry
-                    <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">
+                    <span className="material-symbols-outlined text-base sm:text-xl group-hover:translate-x-2 transition-transform">
                       arrow_forward
                     </span>
                   </button>
