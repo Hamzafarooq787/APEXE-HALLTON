@@ -144,11 +144,11 @@ export default function Contact() {
                 </div>
                 <div className="sm:col-span-2 pt-2 sm:pt-4">
                   <button
-                    className="w-full bg-primary text-on-primary py-4 sm:py-5 md:py-6 px-8 sm:px-12 font-headline font-black uppercase tracking-[0.2em] flex items-center justify-center gap-3 sm:gap-4 hover:bg-primary-container transition-all group text-sm sm:text-base"
+                    className="w-full bg-primary text-on-primary py-3 sm:py-4 md:py-5 px-4 sm:px-8 md:px-12 font-headline font-black uppercase tracking-wide sm:tracking-[0.2em] flex items-center justify-center gap-2 sm:gap-3 hover:bg-primary-container transition-all group text-xs sm:text-sm md:text-base"
                     type="submit"
                   >
                     Transmit Inquiry
-                    <span className="material-symbols-outlined group-hover:translate-x-2 transition-transform">
+                    <span className="material-symbols-outlined text-base sm:text-xl group-hover:translate-x-2 transition-transform">
                       arrow_forward
                     </span>
                   </button>
