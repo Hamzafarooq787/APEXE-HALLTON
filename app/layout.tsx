@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "APEXE HALLTON LTD | Architectural Authority in Engineering",
@@ -54,55 +54,7 @@ export default function RootLayout({
         {children}
 
         {/* Footer */}
-        <footer className="bg-blue-950 w-full py-12 sm:py-16 px-4 sm:px-6 md:px-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 max-w-7xl mx-auto">
-            <div className="col-span-2 md:col-span-1">
-              <div className="mb-4 sm:mb-6">
-                <Image
-                  src="/images/apexe-hallton-logo.png"
-                  alt="APEXE HALLTON logo"
-                  width={160}
-                  height={64}
-                  className="h-14 w-auto object-contain brightness-0 invert"
-                />
-              </div>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                The UK&apos;s premier authority in architectural engineering and large-scale construction solutions.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Contact Us</h4>
-              <a href="mailto:sales@apexehallton.co.uk" className="text-slate-400 hover:text-white text-xs sm:text-sm transition-all hover:translate-x-1 inline-block break-all">
-                sales@apexehallton.co.uk
-              </a>
-              <p className="text-slate-400 text-xs sm:text-sm mt-2">19 MAY AVENUE, ST6 6EN</p>
-            </div>
-            <div>
-              <h4 className="text-white font-bold mb-2 uppercase tracking-tight text-xs sm:text-sm">Social</h4>
-              <div className="flex space-x-4">
-                <span className="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer text-xl sm:text-2xl">corporate_fare</span>
-                <span className="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer text-xl sm:text-2xl">construction</span>
-                <span className="material-symbols-outlined text-slate-400 hover:text-white cursor-pointer text-xl sm:text-2xl">account_balance</span>
-              </div>
-            </div>
-          </div>
-          <div className="max-w-7xl mx-auto mt-10 sm:mt-16 pt-6 sm:pt-8 border-t border-slate-800 flex flex-col sm:flex-row justify-between items-center gap-2 sm:gap-0 text-center sm:text-left">
-            <p className="text-slate-400 text-xs sm:text-sm tracking-wide">
-              &copy; 2026 APEXE HALLTON LTD. Architectural Authority in Engineering.
-            </p>
-            <p className="text-slate-400 text-xs sm:text-sm">
-              Designed By{" "}
-              <a
-                href="https://linkedo.co.uk/"
-                target="_blank"
-                rel="nofollow noopener noreferrer"
-                className="font-bold text-white hover:opacity-80 transition-opacity"
-              >
-                Linkedo
-              </a>
-            </p>
-          </div>
-        </footer>
+        <Footer />
 
 
       </body>
