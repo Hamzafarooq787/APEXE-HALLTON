@@ -60,12 +60,7 @@ export default function Contact() {
                       sales@apexehallton.co.uk
                     </a>
                   </div>
-                  <div>
-                    <h3 className="font-headline font-bold text-base sm:text-lg text-on-surface mb-1">Directorate</h3>
-                    <a className="text-primary font-medium hover:underline block text-sm sm:text-base" href="mailto:Habte.Kibrom@apexehallton.co.uk">
-                      Habte.Kibrom@apexehallton.co.uk
-                    </a>
-                  </div>
+
                 </div>
               </div>
             </div>
