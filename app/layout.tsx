@@ -6,6 +6,10 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "APEXE HALLTON LTD | Architectural Authority in Engineering",
   description: "Reliable Construction Services Across the UK.",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
