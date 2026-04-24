@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "APEXE HALLTON LTD | Architectural Authority in Engineering",
@@ -30,7 +31,15 @@ export default function RootLayout({
         <footer className="bg-blue-950 w-full py-12 sm:py-16 px-4 sm:px-6 md:px-12">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 sm:gap-10 md:gap-12 max-w-7xl mx-auto">
             <div className="col-span-2 md:col-span-1">
-              <div className="text-base sm:text-xl font-bold text-white uppercase tracking-widest mb-4 sm:mb-6">APEXE HALLTON</div>
+              <div className="mb-4 sm:mb-6">
+                <Image
+                  src="/images/apexe-hallton-logo.png"
+                  alt="APEXE HALLTON logo"
+                  width={160}
+                  height={64}
+                  className="h-14 w-auto object-contain brightness-0 invert"
+                />
+              </div>
               <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
                 The UK&apos;s premier authority in architectural engineering and large-scale construction solutions.
               </p>
