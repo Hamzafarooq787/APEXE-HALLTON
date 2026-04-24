@@ -20,7 +20,7 @@ export default function Navbar() {
               alt="APEXE HALLTON logo"
               width={140}
               height={56}
-              className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+              className="h-14 sm:h-14 md:h-16 w-auto object-contain"
               priority
             />
           </Link>
@@ -64,7 +64,7 @@ export default function Navbar() {
                 alt="APEXE HALLTON logo"
                 width={110}
                 height={44}
-                className="h-9 w-auto object-contain"
+                className="h-12 w-auto object-contain"
               />
               <button
                 onClick={closeMenu}
